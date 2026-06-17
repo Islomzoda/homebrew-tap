@@ -5,23 +5,23 @@
 class Termada < Formula
   desc "The reliable, transparent terminal runtime for AI agents."
   homepage "https://github.com/Islomzoda/termada"
-  version "0.7.4"
+  version "0.7.5"
   license "Apache-2.0"
 
   depends_on "bash"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Islomzoda/termada/releases/download/v0.7.4/termada_darwin_amd64.tar.gz"
-      sha256 "7697367eca87540c6cd064490a4873313c2a675062c5f4f8f982006e8a17560d"
+      url "https://github.com/Islomzoda/termada/releases/download/v0.7.5/termada_darwin_amd64.tar.gz"
+      sha256 "e71c5124aae165717108e6afd8000273bc9f0243d99c73002886f5d1843fb6d6"
 
       define_method(:install) do
         bin.install "termada"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Islomzoda/termada/releases/download/v0.7.4/termada_darwin_arm64.tar.gz"
-      sha256 "cbb35c888b497e756cab5f0b785fcd6d37ae925830ed49c74715c3ed48e60fed"
+      url "https://github.com/Islomzoda/termada/releases/download/v0.7.5/termada_darwin_arm64.tar.gz"
+      sha256 "b692165fc06700920f2c249380ae7e7339b15a8d28300330a0dc7d6f44ac12a8"
 
       define_method(:install) do
         bin.install "termada"
@@ -31,15 +31,15 @@ class Termada < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Islomzoda/termada/releases/download/v0.7.4/termada_linux_amd64.tar.gz"
-      sha256 "5a2e52710b8c2c285a3d5c5be60b8a905645313377fd5eb5b7e497995b514ff6"
+      url "https://github.com/Islomzoda/termada/releases/download/v0.7.5/termada_linux_amd64.tar.gz"
+      sha256 "336a003f0df80a3702ef9db41920597a2ea51879bd4b2d7979d564308d938659"
       define_method(:install) do
         bin.install "termada"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Islomzoda/termada/releases/download/v0.7.4/termada_linux_arm64.tar.gz"
-      sha256 "af7771643f040dc0d630012edf387c7167b15e30f53ba8ba14394a953a023c53"
+      url "https://github.com/Islomzoda/termada/releases/download/v0.7.5/termada_linux_arm64.tar.gz"
+      sha256 "d02e58683f314bc171376a5876a01dbbe5088a8dff70961cbb0f37b2e3f444c7"
       define_method(:install) do
         bin.install "termada"
       end
